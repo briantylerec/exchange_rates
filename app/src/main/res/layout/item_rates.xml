@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Task 4 item layout.
+    The base project used nested layouts and an inline divider View. This row keeps
+    only content: currency on the left and the rate value right-aligned. Dividers are
+    drawn by RatesDividerItemDecoration.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rate_row_height"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/rate_row_horizontal_padding"
+    android:paddingEnd="@dimen/rate_row_horizontal_padding">
+
+    <TextView
+        android:id="@+id/currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/rate_text"
+        android:textSize="@dimen/rate_text_size"
+        tools:text="USD" />
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/rate_column_spacing"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:singleLine="true"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/rate_text"
+        android:textSize="@dimen/rate_text_size"
+        tools:text="0.8371852738225658" />
+
+</LinearLayout>

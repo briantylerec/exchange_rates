@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Task 4: dimensions for the rate list row and RecyclerView divider. -->
+    <dimen name="rate_divider_height">1dp</dimen>
+    <dimen name="rate_row_height">70dp</dimen>
+    <dimen name="rate_row_horizontal_padding">22dp</dimen>
+    <dimen name="rate_column_spacing">24dp</dimen>
+    <dimen name="rate_text_size">20sp</dimen>
+</resources>
